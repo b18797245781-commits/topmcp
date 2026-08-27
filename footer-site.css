@@ -1,0 +1,6 @@
+/* 页脚本地化覆盖：官网 3654290.css 中该背景为远程 URL，
+   本地 file:// 打开会因防盗链加载失败，此处覆盖为本地图 */
+.footerDOM .footer-free-four-days-area{
+  background:url(images/footer-no-login.png);
+  background-size:100% 50px;
+}

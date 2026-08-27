@@ -334,16 +334,7 @@
   .cta .mini{display:flex;gap:22px;justify-content:center;margin-top:30px;font-size:12.5px;color:#7f9689;flex-wrap:wrap;position:relative}
   .cta .mini span{display:flex;align-items:center;gap:6px}
   .cta .mini span::before{content:"";width:5px;height:5px;border-radius:50%;background:var(--brand)}
-  footer{border-top:1px solid var(--dark-line);background:var(--dark);padding:44px 0 36px;color:#7f9689;font-size:13px}
-  footer .f-top{display:flex;align-items:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
-  footer .f-top .logo{display:flex;align-items:center;gap:10px;font-weight:700;font-size:18px;color:#fff;letter-spacing:.01em}
-  footer .f-top .mcp-tag{font-size:11px;font-weight:700;color:#fff;background:var(--brand);border-radius:6px;padding:2px 7px;letter-spacing:.04em}
-  footer .f-links{display:flex;gap:20px;flex-wrap:wrap}
-  footer .f-links a{color:#9fb2a6;transition:.2s}
-  footer .f-links a:hover{color:var(--brand-2)}
-  footer .f-bot{display:flex;justify-content:space-between;gap:12px;flex-wrap:wrap;border-top:1px solid var(--dark-line);padding-top:18px;color:#5f7d6b}
-  footer .f-bot a{color:#7f9689}
-  footer .f-bot a:hover{color:var(--brand-2)}
+  /* 页脚样式一比一取自官网（footer-site.css + element-ui.css，见 <head> 引用） */
 
   /* ---------- 滚动显现 ---------- */
   .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s ease,transform .7s ease}
@@ -376,6 +367,9 @@
   }
 
 </style>
+<!-- 页脚一比一取自官网：结构样式来自 _files/3654290.css（已在 head 引用），
+     footer-site.css 仅做本地图片覆盖（banner 背景防盗链本地化） -->
+<link rel="stylesheet" href="footer-site.css">
 </head>
 <body>
 <div class="dld-header-all" style="background: transparent; height: 64px; color: rgb(0, 0, 0);" data-v-5f117bb2="" data-v-5c39e3ba=""><!----> <div class="dld-header" style="background:#fff" data-v-5f117bb2=""><div class="dld-header-main dld-flexalign-center" data-v-5f117bb2=""><div class="dfc dld-flexitem-1" data-v-5f117bb2=""><div class="logo dld-flexalign-center" data-v-5f117bb2=""><img src="./店雷达1688数据分析插件_阿里数据分析工具下载免费试用_files/logo.png" style="height:32px" data-v-5f117bb2=""></div> <div class="dld-flexalign-center menu-list back-list" data-v-5f117bb2=""><a href="https://www.dianleida.net/" class="dfc menu-item" data-v-5f117bb2="">
@@ -838,35 +832,127 @@
   </div>
 </section>
 
-<!-- ======== 页脚 ======== -->
-<footer>
-  <div class="container">
-    <div class="f-top">
-      <a class="logo" href="https://www.dianleida.net/" target="_blank" rel="noopener">
-        <svg width="26" height="26" viewBox="0 0 40 40" fill="none" aria-hidden="true">
-          <circle cx="20" cy="20" r="15.5" stroke="#00c84b" stroke-width="2" opacity=".32"/>
-          <circle cx="20" cy="20" r="10" stroke="#00c84b" stroke-width="2" opacity=".55"/>
-          <circle cx="20" cy="20" r="4.6" stroke="#00c84b" stroke-width="2"/>
-          <path d="M20 20 L30.6 9.4 A15 15 0 0 1 35 20 Z" fill="#00c84b" opacity=".9"/>
-          <circle cx="27.2" cy="16.8" r="1.6" fill="#fff"/>
-        </svg>
-        店雷达<span class="mcp-tag">MCP</span>
-      </a>
-      <div class="f-links">
-        <a href="https://www.dianleida.net/1688/competeShop/category/library/" target="_blank" rel="noopener">选品中心</a>
-        <a href="https://www.dianleida.net/useTutorial" target="_blank" rel="noopener">操作手册</a>
-        <a href="https://www.dianleida.net/mcp/" target="_blank" rel="noopener">MCP 点数</a>
-        <a href="https://www.dianleida.net/mcp/docs/" target="_blank" rel="noopener">MCP 文档</a>
-        <a href="https://www.dianleida.net/mcp/buy/" target="_blank" rel="noopener">购买点数</a>
-        <a href="https://www.dianleida.net/download" target="_blank" rel="noopener">插件下载</a>
+<!-- ======== 页脚：一比一取自官网 dianleida.net 底部 footerDOM ======== -->
+<div id="footerDOM" class="footerDOM" data-v-6075202a="">
+  <div class="hezi" data-v-6075202a="">
+    <div class="main" data-v-6075202a="">
+      <div class="top-logo" data-v-6075202a="">
+        <img src="images/footer-logo-w.png" data-v-6075202a="">
+        <p data-v-6075202a=""></p>
+        <p data-v-6075202a="">电商数据分析工具</p>
+      </div>
+      <div class="kuaijie dld-flex" data-v-6075202a="">
+        <div class="dld-flex" data-v-6075202a="">
+          <div class="huise" data-v-6075202a="">快捷导航</div>
+          <div class="link-list" data-v-6075202a="">
+            <a target="_blank" href="https://www.dianleida.net/1688/competeShop/category/library/" data-v-6075202a="">店雷达【选品中心】</a>
+            <a target="_blank" href="https://www.dianleida.net/articles/" data-v-6075202a="">店雷达【行业资讯】</a>
+            <a target="_blank" href="https://www.dianleida.net/1688/competeShop/myFollow/followShop/" data-v-6075202a="">店雷达【店铺监控】</a>
+            <a target="_blank" href="https://www.dianleida.net/useTutorial" data-v-6075202a="">店雷达【操作手册】</a>
+            <a target="_blank" href="https://www.dianleida.net/download/" data-v-6075202a="">店雷达【运营插件】</a>
+            <a target="_blank" href="https://www.dianleida.net/buy/monitorBuy" data-v-6075202a="">店雷达【购买工具】</a>
+            <span data-v-6075202a="">
+              <div role="tooltip" id="el-popover-7513" aria-hidden="true" class="el-popover el-popper" style="width:200px;display:none" tabindex="0">
+                <div class="xiaochengxu-area" data-v-6075202a="">
+                  <div class="xiaochengxu-area-title" data-v-6075202a="">添加微信小程序 数据随时看</div>
+                  <img src="images/xiaochengxu-qrcode.png" alt="店雷达小程序" data-v-6075202a="">
+                  <div class="dfc xiaochengxu-area-bottom" data-v-6075202a=""><i class="iconfont icon-weixin f-20" style="color:#52c41a" data-v-6075202a=""></i><span class="ml-4" data-v-6075202a="">微信扫一扫</span></div>
+                </div>
+              </div>
+              <span class="el-popover__reference-wrapper"><a target="_blank" data-v-6075202a="" class="el-popover__reference" aria-describedby="el-popover-7513" tabindex="0">店雷达【小程序】</a></span>
+            </span>
+          </div>
+        </div>
+        <div class="dld-flex" style="margin-left:50px" data-v-6075202a="">
+          <div class="huise" data-v-6075202a="">操作教程</div>
+          <div class="link-list" style="width:247px" data-v-6075202a="">
+            <a target="_blank" href="https://www.dianleida.net/useTutorial?url=dy817dyoxm8y2r08" data-v-6075202a="">店雷达【1688选品】</a>
+            <a target="_blank" href="https://www.dianleida.net/useTutorial?url=gmmadblb3xafhr8h" data-v-6075202a="">店雷达【商品榜单】</a>
+            <a target="_blank" href="https://www.dianleida.net/useTutorial?url=uocbime5wdgffux3" data-v-6075202a="">店雷达【全网图搜】</a>
+            <a target="_blank" href="https://www.dianleida.net/useTutorial?url=yauc8r74453eviaa" data-v-6075202a="">店雷达【1688跨境市场】</a>
+            <a target="_blank" href="https://www.dianleida.net/useTutorial?url=zf4yxi9fux120uyr" data-v-6075202a="">店雷达【国家热门货盘】</a>
+            <a target="_blank" href="https://www.dianleida.net/useTutorial?url=gvbgfgl09duhlssc" data-v-6075202a="">店雷达【1688源头厂家】</a>
+            <a target="_blank" href="https://www.dianleida.net/useTutorial?url=xc3nzaoy1hyoyg06" data-v-6075202a="">店雷达【店铺监控】</a>
+          </div>
+        </div>
+      </div>
+      <div data-v-6075202a="">
+        <div class="qrCode-box" data-v-6075202a="">
+          <div class="qrCode" style="width:initial;height:initial" data-v-6075202a="">
+            <div class="qrImg row-center-center" data-v-6075202a=""><div style="display:inline-block;padding:6px" data-v-9d625b40="" data-v-6075202a=""><img width="100" src="images/footer-qr-kefu.png" data-v-9d625b40=""></div></div>
+            <span data-v-6075202a="">微信客服</span>
+          </div>
+          <div class="qrCode" data-v-6075202a="">
+            <div class="qrImg row-center-center" data-v-6075202a=""><img src="images/footer-qr-gzh.jpg" alt="" style="width:100px" data-v-6075202a=""></div>
+            <span data-v-6075202a="">微信公众号</span>
+          </div>
+          <div class="qrCode" data-v-6075202a="">
+            <div class="qrImg row-center-center" data-v-6075202a=""><img src="images/footer-qr-sph.png" alt="" style="width:100px" data-v-6075202a=""></div>
+            <span data-v-6075202a="">视频号</span>
+          </div>
+          <div class="qrCode" data-v-6075202a="">
+            <div class="qrImg row-center-center" data-v-6075202a=""><img alt="" referrerpolicy="origin" src="images/footer-qr-dyh.png" style="width:100px" data-v-6075202a=""></div>
+            <span data-v-6075202a="">抖音号</span>
+          </div>
+        </div>
+      </div>
+      <ul class="disn friend-links" data-v-6075202a="">
+        <li data-v-6075202a=""><a href="https://www.kj123.cn" target="_blank" data-v-6075202a="">跨境123</a></li>
+        <li data-v-6075202a=""><a href="https://www.partnershare.cn/?source=dianleida" target="_blank" data-v-6075202a="">PartnerShare产品分享社区</a></li>
+        <li data-v-6075202a=""><a href="https://www.asiaecs.com/" target="_blank" data-v-6075202a="">海多客</a></li>
+        <li data-v-6075202a=""><a href="https://www.mzlsoft.com/" target="_blank" data-v-6075202a="">麦哲伦科技</a></li>
+        <li data-v-6075202a=""><a href="https://www.amzmm.com/" target="_blank" data-v-6075202a="">蘑菇跨境</a></li>
+        <li data-v-6075202a=""><a href="https://www.tpsea.com/" target="_blank" data-v-6075202a="">森阳跨境</a></li>
+      </ul>
+    </div>
+    <div class="xuxian" data-v-6075202a=""></div>
+    <div class="jianyifankui" data-v-6075202a="">
+      <div class="tit" data-v-6075202a="">我们非常重视您提出的宝贵建议，我们承诺：</div>
+      <p data-v-6075202a="">1. 您所填写的建议都会进入我们的需求库，我们将会对每个建议进行认真查看并讨论；</p>
+      <p data-v-6075202a="">2. 建议一旦被采纳，客服会联系您赠送相对应工具使用时长和运营干货奖励。</p>
+      <div data-v-6075202a="">
+        <div class="dld-flex item" style="margin-top:25px" data-v-6075202a="">
+          <div class="label must" data-v-6075202a="">反馈类型</div>
+          <div role="radiogroup" class="el-radio-group" data-v-6075202a="">
+            <label role="radio" aria-checked="true" tabindex="0" class="el-radio is-checked" data-v-6075202a=""><span class="el-radio__input is-checked"><span class="el-radio__inner"></span><input type="radio" aria-hidden="true" tabindex="-1" autocomplete="off" value="产品新需求" checked="" class="el-radio__original"></span><span class="el-radio__label">产品新需求<!----></span></label>
+            <label role="radio" tabindex="-1" class="el-radio" data-v-6075202a=""><span class="el-radio__input"><span class="el-radio__inner"></span><input type="radio" aria-hidden="true" tabindex="-1" autocomplete="off" value="功能优化建议" class="el-radio__original"></span><span class="el-radio__label">功能优化建议<!----></span></label>
+            <label role="radio" tabindex="-1" class="el-radio" data-v-6075202a=""><span class="el-radio__input"><span class="el-radio__inner"></span><input type="radio" aria-hidden="true" tabindex="-1" autocomplete="off" value="功能缺陷BUG" class="el-radio__original"></span><span class="el-radio__label">功能缺陷BUG<!----></span></label>
+          </div>
+        </div>
+        <div class="dld-flex item" data-v-6075202a="">
+          <div class="label must mt11" data-v-6075202a="">反馈内容</div>
+          <div class="w440 el-textarea" data-v-6075202a=""><textarea autocomplete="off" rows="3" placeholder="觉得店雷达功能待优化或者希望开发的新功能都可以填写" class="el-textarea__inner" style="min-height: 33px;"></textarea><!----></div>
+        </div>
+        <div class="dld-flex item" data-v-6075202a="">
+          <div class="label mt11" data-v-6075202a="">图片描述</div>
+          <div class="upload" data-v-6075202a="">
+            <div class="upload-item" data-v-24f924ac="" data-v-6075202a=""><div class="box dfcjc curp" data-v-24f924ac=""><span class="jia" data-v-24f924ac="">+</span><!----><!----></div><input type="file" style="display:none" data-v-24f924ac=""></div>
+            <div class="tip" data-v-6075202a="">最多可上传5张图片</div>
+          </div>
+        </div>
+        <div class="dld-flex item" data-v-6075202a="">
+          <div class="label mt11" data-v-6075202a="">联系方式</div>
+          <div class="w440 el-input el-input--small" data-v-6075202a=""><!----><input autocomplete="off" maxlength="11" oninput="value=value.replace(/[^0-9]/g,'')" placeholder="希望您留下联系方式，方便我们与您沟通和发放奖励" class="el-input__inner" type="text"><!----><!----><!----><!----></div>
+        </div>
+        <div class="dld-flex item" data-v-6075202a="">
+          <div class="label mt11" data-v-6075202a=""></div>
+          <button type="button" class="el-button el-button--primary" data-v-6075202a=""><!----><!----><span>确定提交</span></button>
+        </div>
       </div>
     </div>
-    <div class="f-bot">
-      <span>© 2026 店雷达 DianLeida · 让 AI 更懂选品</span>
-      <span><a href="https://beian.miit.gov.cn/" target="_blank" rel="noopener">粤ICP备2022123227号-1</a></span>
-    </div>
   </div>
-</footer>
+  <div class="copyright" data-v-6075202a="">
+    Copyright © 2026 汕头市有维网络科技有限公司 店雷达
+    <a href="https://beian.miit.gov.cn/" target="_blank" data-v-6075202a="">粤ICP备2022123227号-1</a>
+  </div>
+  <div style="width:100%;height:50px" data-v-6075202a=""></div>
+  <div class="footer-free-four-days-area" data-v-6075202a="">
+    <div class="dfc" data-v-6075202a=""><img src="images/footer-computer.png" data-v-6075202a=""><p data-v-6075202a="">1688选品&amp;店铺数据分析，<span data-v-6075202a="">就用店雷达</span></p></div>
+    <div class="login-btn" data-v-6075202a="">立即注册<img src="images/song-4-t.png" alt="" class="login-btn-message" data-v-6075202a=""></div>
+  </div>
+</div>
+
+
 
 
 </div>
