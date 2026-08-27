@@ -1,0 +1,1 @@
+(window.webpackJsonp=window.webpackJsonp||[]).push([[134],{2309:function(n,o,t){"use strict";t.r(o);var e={components:{monitorBuy:t(1509).a}},c=t(0),component=Object(c.a)(e,function(){return(0,this._self._c)("monitorBuy")},[],!1,null,null,null);o.default=component.exports}}]);
