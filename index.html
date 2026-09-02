@@ -168,6 +168,13 @@
   /* ---------- 演示 ---------- */
   .demo{padding:96px 0;background:var(--bg-soft);border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
   .demo-wrap{max-width:1040px;margin:0 auto}
+  .client-strip{max-width:1040px;margin:0 auto 26px;display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+  .client-card{height:86px;border:1px solid var(--line);border-radius:14px;background:#fff;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:9px;box-shadow:0 10px 30px rgba(8,60,35,.05);transition:.22s}
+  .client-card:hover{transform:translateY(-2px);border-color:rgba(0,200,75,.38);box-shadow:0 16px 38px rgba(8,60,35,.09)}
+  .client-card img{width:32px;height:32px;object-fit:contain;display:block}
+  .client-card .more-ico{width:32px;height:32px;border-radius:10px;background:rgba(0,200,75,.1);color:var(--brand-deep);display:flex;align-items:center;justify-content:center;font-weight:800;font-size:18px}
+  .client-card span{font-size:13px;font-weight:600;color:var(--ink-2);line-height:1;white-space:nowrap}
+  .client-card small{display:block;font-size:10.5px;color:var(--muted);font-weight:500;margin-top:-3px;white-space:nowrap}
   /* ---------- 交互演示（AI 客户端风格） ---------- */
   .chat{border:1px solid var(--line);border-radius:18px;background:#fff;overflow:hidden;box-shadow:0 24px 70px rgba(8,60,35,.12)}
   .chat-head{display:flex;align-items:center;gap:12px;padding:12px 16px;background:#fff;border-bottom:1px solid var(--line)}
@@ -350,6 +357,7 @@
     .tool-row{grid-template-columns:1fr;gap:10px;padding:20px}
     .what-grid{grid-template-columns:1fr;gap:36px}
     .demo-wrap{max-width:92vw}
+    .client-strip{grid-template-columns:repeat(3,1fr);max-width:92vw}
     .pcards{grid-template-columns:repeat(2,1fr)}
   }
   @media (max-width:720px){
@@ -361,6 +369,8 @@
     .cmp{grid-template-columns:1fr}
     .sec-head{margin-bottom:40px}
     section{padding:72px 0}
+    .client-strip{grid-template-columns:repeat(2,1fr);gap:10px}
+    .client-card{height:78px}
     .chat-body{height:520px;padding:18px 16px 14px;gap:18px}
     .msg.user .bubble{max-width:100%}
     .msg.ai .ai-body{max-width:100%}
@@ -593,6 +603,38 @@
       <span class="eyebrow" style="justify-content:center">Live Demo</span>
       <h2 class="sec-title">它如何工作？点一下，看真实查询过程</h2>
       <p class="sec-sub" style="margin-left:auto;margin-right:auto">以下是 AI 客户端接入店雷达 MCP 后的真实交互流程。示例数据取自店雷达 MCP 真实接口（2026-08），点击示例问题即可播放。</p>
+    </div>
+    <div class="client-strip reveal" aria-label="支持的 AI 客户端">
+      <a class="client-card" href="https://www.dianleida.net/mcp/docs/" target="_blank" rel="noopener">
+        <img src="images/ai-coze.png" alt="Coze">
+        <span>Coze</span>
+        <small>查看教程</small>
+      </a>
+      <a class="client-card" href="https://www.dianleida.net/mcp/docs/" target="_blank" rel="noopener">
+        <img src="images/ai-chatgpt.png" alt="ChatGPT">
+        <span>ChatGPT</span>
+        <small>查看教程</small>
+      </a>
+      <a class="client-card" href="https://www.dianleida.net/mcp/docs/" target="_blank" rel="noopener">
+        <img src="images/ai-workbuddy.png" alt="WorkBuddy">
+        <span>WorkBuddy</span>
+        <small>查看教程</small>
+      </a>
+      <a class="client-card" href="https://www.dianleida.net/mcp/docs/" target="_blank" rel="noopener">
+        <img src="images/ai-codex.png" alt="Codex">
+        <span>Codex</span>
+        <small>查看教程</small>
+      </a>
+      <a class="client-card" href="https://www.dianleida.net/mcp/docs/" target="_blank" rel="noopener">
+        <img src="images/ai-deepseek.png" alt="Deepseek herness">
+        <span>Deepseek</span>
+        <small>查看教程</small>
+      </a>
+      <a class="client-card" href="https://www.dianleida.net/mcp/docs/" target="_blank" rel="noopener">
+        <div class="more-ico">+</div>
+        <span>更多客户端</span>
+        <small>整理中</small>
+      </a>
     </div>
     <div class="demo-wrap reveal" id="demoWrap">
       <div class="chat">
